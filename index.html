@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <title>Case study between google lens and mobile net</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  
+  
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body><center>
+        <h1>CASE STUDY</h1>
+        <h2>between google lens and mobilenet model</h2>
+       <span> <img src="https://play-lh.googleusercontent.com/G5oF0mhpOcQzFTrU6TDUL0JoAjzRt38weiZKua7L61WVT1z3dPcE9gUu-W2EwtM9cZU" id="google"></span>
+       <span>Vs</span>
+       <span><img src="https://thumbs.dreamstime.com/b/wifi-mobile-phone-icon-logo-design-element-can-be-used-as-as-complement-to-96498388.jpg" id="mobile"></span>
+    </center>
+        <br><br>
+        <ol>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image-</b>
+                    <img src="bottle.jpg" class="img-responsive" >
+                </li>
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> GOOGLE LENS</b>-
+                <span style="color: blue; font-size:18; font-weight: bold;">Bottle</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> MOBILENET-MODEL</b>-
+                    <span style="color: red; font-size:18; font-weight: bold;">Mic</span>
+                    </h5>
+
+                    <div class="mini-result" class="col-xs-12">
+                        <h4 style="color: green; font-size:25; font-weight: bold;">Result-</h4>
+                        <hr>
+                        <h4 style="color:rgb(187, 0, 103); font-size:30; font-weight: bold;">Google lens is accurate</h4>
+                    </div>
+
+            </div>
+            <br><br><br>
+
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image-</b>
+                    <img src="clock.jpg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> GOOGLE LENS</b>-
+                <span style="color: blue; font-size:18; font-weight: bold;">Watch</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> MOBILENET-MODEL</b>-
+                    <span style="color: red; font-size:18; font-weight: bold;">TV</span>
+                    </h5>
+
+                    <div class="mini-result" class="col-xs-12">
+                        <h4 style="color: green; font-size:25; font-weight: bold;">Result-</h4>
+                        <hr>
+                        <h4 style="color:rgb(187, 0, 103); font-size:30; font-weight: bold;">Google lens is more accurate</h4>
+                    </div>
+
+            </div>
+            <br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image-</b>
+                    <img src="diary.jpg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> GOOGLE LENS</b>-
+                <span style="color: blue; font-size:18; font-weight: bold;">Notebook</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> MOBILENET-MODEL</b>-
+                    <span style="color: red; font-size:18; font-weight: bold;">Play Station</span>
+                    </h5>
+
+                    <div class="mini-result" class="col-xs-12">
+                        <h4 style="color: green; font-size:25; font-weight: bold;">Result-</h4>
+                        <hr>
+                        <h4 style="color:rgb(187, 0, 103); font-size:30; font-weight: bold;">Google lens is more accurate</h4>
+                    </div>
+
+            </div>
+            <br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image-</b>
+                    <img src="doll.jpg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> GOOGLE LENS</b>-
+                <span style="color: blue; font-size:18; font-weight: bold;">Girl</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> MOBILENET-MODEL</b>-
+                    <span style="color: red; font-size:18; font-weight: bold;">Vaccum</span>
+                    </h5>
+
+                    <div class="mini-result" class="col-xs-12">
+                        <h4 style="color: green; font-size:25; font-weight: bold;">Result-</h4>
+                        <hr>
+                        <h4 style="color:rgb(187, 0, 103); font-size:30; font-weight: bold;">Both are wrong butt google lens is close</h4>
+                    </div>
+
+            </div>
+            <br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image-</b>
+                    <img src="mug.jpg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> GOOGLE LENS</b>-
+                <span style="color: blue; font-size:18; font-weight: bold;">Box</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> MOBILENET-MODEL</b>-
+                    <span style="color: red; font-size:18; font-weight: bold;">Bottle</span>
+                    </h5>
+
+                    <div class="mini-result" class="col-xs-12">
+                        <h4 style="color: green; font-size:25; font-weight: bold;">Result-</h4>
+                        <hr>
+                        <h4 style="color:rgb(187, 0, 103); font-size:30; font-weight: bold;">Both are wrong</h4>
+                    </div>
+
+            </div>
+            <br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image-</b>
+                    <img src="pen.jpg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> GOOGLE LENS</b>-
+                <span style="color: blue; font-size:18; font-weight: bold;">Stick</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> MOBILENET-MODEL</b>-
+                    <span style="color: red; font-size:18; font-weight: bold;">Microphone</span>
+                    </h5>
+
+                    <div class="mini-result" class="col-xs-12">
+                        <h4 style="color: green; font-size:25; font-weight: bold;">Result-</h4>
+                        <hr>
+                        <h4 style="color:rgb(187, 0, 103); font-size:30; font-weight: bold;">Both are wrong</h4>
+                    </div>
+
+            </div>
+            <br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image-</b>
+                    <img src="pyramid.jpg" class="img-responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> GOOGLE LENS</b>-
+                <span style="color: blue; font-size:18; font-weight: bold;">Cone</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">OUTPUT ON<b> MOBILENET-MODEL</b>-
+                    <span style="color: red; font-size:18; font-weight: bold;">Hill</span>
+                    </h5>
+
+                    <div class="mini-result" class="col-xs-12">
+                        <h4 style="color: green; font-size:25; font-weight: bold;">Result-</h4>
+                        <hr>
+                        <h4 style="color:rgb(187, 0, 103); font-size:30; font-weight: bold;">Both are wrong</h4>
+                    </div>
+
+            </div>
+            <br>
+        </ol>
+    </body>
+</html>
